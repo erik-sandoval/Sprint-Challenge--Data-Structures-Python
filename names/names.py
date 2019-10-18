@@ -12,6 +12,9 @@ f = open('names/names_2.txt', 'r')
 names_2 = f.read().split("\n")  # List containing 10000 names
 f.close()
 
+# the original run time complexity was O(n^2) because of the nest for loops, which per name of the
+# 10000 name_1 iterated through name_2 10000 names.
+
 name_list = BinarySearchTree('Random Name')
 duplicates = []
 for name_1 in names_1:
